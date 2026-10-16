@@ -15,12 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         Config::create([
             'key' => 'version',
-            'value' => '2.2.2'
+            'value' => '0.0.1'
         ]);
 
 
         $this->call([
-            UserSeeder::class,
+            AccountSeeder::class,
         ]);
     }
 }
